@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografi-andiahmad</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            opacity: 0;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeout {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        .modal {
+            background-color:  #181a25dc;
+            width: 650px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            position: absolute;
+            color: white;
+        }
+
+        .card {
+            background-color: #333647;
+            width: 550px;
+            height: 280px;
+            border-radius: 15px;
+            position: absolute;
+
+        }
+
+        .ft-profil img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            border: 1px solid #fff;
+            z-index: 999;
+            top: -130px;
+            left: -50px;
+        }
+
+
+        .nama {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 0;
+            font-family: 'Inter', sans-serif;
+            font-size: 25px;
+        }
+
+        .deskripsi {
+            font-family: 'Inter', sans-serif;
+            margin-top: 1px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .article {
+            font-family: 'Inter', sans-serif;
+            text-align: justify;
+            margin: 15px;
+            text-indent: 2em;
+        }
+
+        .btn-close {
+            width: 100px;
+            height: 100px;
+            z-index: 99;
+            position: relative;
+            top: -32%;
+            left: 56%;
+        }
+
+        .social-media {
+            width: 100px;
+            height: 40px;
+            position: relative;
+            top: 18%;
+            left: 26%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 20px;
+            height: 20px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background-color: #32ade6;
+        }
+
+        .fb {
+            background-color: white;
+        }
+
+        .cls {
+            width: 30px;
+            height: 4px;
+            background-color: #5B5F77;
+            margin-top: 5px;
+            border-radius: 10px;
+        }
+
+        .btn-close:hover {
+            cursor: pointer;
+        }
+
+        .btn-close .cls:nth-child(1) {
+            transform: rotate(45deg) translate(2px, 0);
+        }
+
+        .btn-close .cls:nth-child(2) {
+            transform: rotate(-45deg) translate(6.5px, -5px);
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:  #0D1126;
+        }
+
+        .btn-modal {
+            background-color: #e7e4e49d;
+            border: 0.5px solid white;
+            padding: 4px 13px;
+            width: 150px;
+            border-radius: 10px;
+            position: fixed;
+            opacity: 1;
+            color: #0D1126;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .btn-modal:hover {
+            cursor: pointer;
+            background-color: rgba(50, 173, 230, 0.1);
+            color: white;
+            transition: 0.5s;
+        }
+
+        @media only screen and (max-width: 400px)  {
+          /* maaf belum sempet atur responsive nya pak, ngejar deadline dulu hehe */
+        }
+
+        @media only screen and (max-width: 768px)  {
+          /* maaf belum sempet atur responsive nya pak, ngejar deadline dulu hehe */
+        }
+
+        @media only screen and (max-width: 1600px)  {
+          /* maaf belum sempet atur responsive nya pak, ngejar deadline dulu hehe */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn-modal" type="checkbox">HERE</button>
+        <div class="wrapper">
+            <div class="modal">
+              
+                <div class="btn-close">
+                    <div class="cls"></div>
+                    <div class="cls"></div>
+                </div>
+                <div class="ft-profil">
+                    <img src="https://scontent.fcgk34-1.fna.fbcdn.net/v/t39.30808-1/238903738_544185940183712_5075788066676847154_n.jpg?stp=dst-jpg_p200x200&_nc_cat=109&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeEwOqMEUigGEB41eL1_OahZqpgyirwbZa6qmDKKvBtlruRdMFfJ9iF07NTMm-DYQqTZE3wkxPQqwVZDhsoSj7lw&_nc_ohc=3ogOC1uvPwwAX_xvhfB&_nc_ht=scontent.fcgk34-1.fna&oh=00_AT_vLj3T6uZycGz1spFlrEN5lszSXt91uvEeWW28HqVEIg&oe=62F0CD7F"
+                        alt="Andi Ahmad Yusup">
+                </div>
+                <div class="card">
+                    <h4 class="nama">Andi Ahmad Yusup</h4>
+                    <p class="deskripsi">Seorang pelajar SMKN 1 Subang</p>
+                    <p class="article"> Hai kenalin nama saya Andi Ahmad Yusup, siswa barbar yang mendiami kelas XI RPL 2 di SMKN 1 Subang. Saya itu tipe orang yang gregetan kalo ketemu bug, susah lepas dari keyboard kalo belum ke fix. Saya itu ngambisnya cuma ke belajar web development, entah kenapa ke pelajaran lain susah dapet niat buat belajarnya, mungkin karena saya memiliki target untuk menjuarai LKS web technology 2023, bissmillah minta doanya temen-temen.</p>
+                </div>
+            </div>
+            <div class="social-media">
+                <a class="logo" href="https://www.instagram.com/ahmdys_/" target="_blank"><img class="logo" src="https://i.postimg.cc/ZYNvdqTY/Png-Item-2218609.png" alt=""></a>
+                <a class="logo" href="https://github.com/andiahmadyusup-id" target="_blank"><img  class="logo" src="https://i.postimg.cc/jj9CDpmJ/291716-github-logo-social-network-social-icon.png" alt=""></a>
+               <a  class="logo" href="https://web.facebook.com/ahxmdys/" target="_blank"> <img class="logo fb" src="https://i.postimg.cc/QMSHjBkS/351-3515159-fb-icon-number-2-blue-circle.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        let modal = document.querySelector('.btn-modal');
+        let close = document.querySelector('.btn-close');
+        let wrapper = document.querySelector('.wrapper');
+
+        modal.addEventListener('click', openModal);
+        close.addEventListener('click', closeModal);
+
+        function closeModal() {
+            modal.style.display = 'inline';
+            wrapper.style.animation = 'fadeout ease 1s';
+            wrapper.style.opacity = '0';
+            modal.style.animation = 'fadein 2s';
+            modal.style.zIndex = '2';
+            modal.style.opacity = '1';
+
+
+
+        }
+        function openModal() {
+            wrapper.style.display = 'flex';
+            wrapper.style.animation = 'fadein ease 1s';
+            modal.style.animation = 'fadeout 0.5s';
+            wrapper.style.opacity = '1';
+            modal.style.opacity = '0';
+        }
+
+    </script>
+</body>
+
+</html>
