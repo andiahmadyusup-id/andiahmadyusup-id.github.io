@@ -5,38 +5,30 @@ const btnStart = document.querySelector(".start");
 const btnStop = document.querySelector(".stop");
 const btnReset = document.querySelector(".reset");
 
-let ms = 00;
-let second = 00;
-let minute = 00;
+let milisecond = 0;
+let second = 0;
+let minute = 0;
 let interval;
 
 function startTimer() {
-    ms++;
-    if (ms <= 9) {
-        miliseconds.innerHTML = "0" + ms;
-    } else if (ms > 9 && ms < 99) {
-        miliseconds.innerHTML = ms;
-    } else {
-        second++;
-        ms = 0;
+    milisecond++;
+    miliseconds.innerHTML = setNumber(milisecond)
+    if (milisecond == 99) {
+      second++
+      seconds.innerHTML = setNumber(second);
+      milisecond = 0;
     }
-
-    if (second <= 9) {
-        seconds.innerHTML = "0" + second;
-    } else if (second > 9 && second < 60) {
-        seconds.innerHTML = second;
-    } else {
+    if(second == 60){
         minute++;
-        second = 0;
+        minutes.innerHTML = setNumber(minute);
+        second = 0
+    } if(minute == 60){
+        alert("sorry, for now this stopwatch just can counting time only 60 minutes");
     }
+}
 
-    if (minute <= 9) {
-        minutes.innerHTML = "0" + minute;
-    } else if (minute > 9 && minute < 60) {
-        minutes.innerHTML = minute;
-    } else {
-        alert("sorry, this stopwatch just can counting time only 60 minutes");
-    }
+function setNumber(number){
+    return (number < 10) ? "0" + number : number; 
 }
 
 btnStart.addEventListener("click", () => {
