@@ -23,7 +23,7 @@ function startTimer() {
         minutes.innerHTML = setNumber(minute);
         second = 0
     } if(minute == 60){
-        alert("sorry, for now this stopwatch just can counting time only 60 minutes");
+        alert("Sorry, for now this stopwatch can only count up to 60 minutes");
     }
 }
 
