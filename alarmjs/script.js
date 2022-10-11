@@ -59,7 +59,7 @@ function alarmSet() {
     let selectedAP = apm.options[apm.selectedIndex].value;
 
     let alarmTime = selectedHour + ":" + selectedMin + ":" + "00" + selectedAP;
-    console.log('alarmTime:' + alarmTime);
+    console.log('Alarm Time:' + alarmTime);
     document.getElementById('alarm-hours').disabled = true;
     document.getElementById('alarm-minutes').disabled = true;
     document.getElementById('am-pm').disabled = true;
@@ -73,9 +73,6 @@ function alarmSet() {
         let seconds = date.getSeconds();
         let ampm = (date.getHours()) < 12 ? 'AM' : 'PM';
 
-
-        //convert military time to standard time
-
         if (hours < 0) {
             hours = hours * -1;
         } else if (hours == 00) {
@@ -85,7 +82,6 @@ function alarmSet() {
         }
 
         let currentTimes = addZero(hours) + ":" + addZero(minutes) + ":" + addZero(seconds) + ampm;
-        console.log("curent time : " + currentTimes);
 
         if (alarmTime == currentTimes) {
             sound.play();
@@ -106,4 +102,10 @@ function alarmSet() {
 
 
 
+}
+function alarmClear(){
+    document.getElementById('alarm-hours').disabled = false;
+    document.getElementById('alarm-minutes').disabled = false;
+    document.getElementById('am-pm').disabled = false;
+    sound.pause();
 }

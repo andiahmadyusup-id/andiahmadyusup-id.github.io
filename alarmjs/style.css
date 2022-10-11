@@ -39,6 +39,19 @@ select {
   padding: 5px 15px;
   border-radius: 5px;
   margin-top: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+  text-align: justify;
+}
+select::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+This i
+select:hover{
+    cursor: pointer;
+    background-color: #000f18;
 }
 button {
   width: 224px;
@@ -49,4 +62,7 @@ button {
   border-radius: 5px;
   margin-top: 10px;
   font-weight: 600;
+} button:hover{
+    cursor: pointer;
+    background-color: #000f18;
 }
