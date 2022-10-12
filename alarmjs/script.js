@@ -3,7 +3,7 @@ sound.loop = true;
 let displayTime = document.getElementById("clock");
 let currentTime = setInterval(() => {
     let date = new Date();
-    let hours = (12 - (date.getHours()));
+    let hours = ((date.getHours()) % 12);
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
     let ampm = (date.getHours()) < 12 ? 'AM' : 'PM';
@@ -68,7 +68,7 @@ function alarmSet() {
     setInterval(function () {
 
         let date = new Date();
-        let hours = (12 - (date.getHours()));
+        let hours = ((date.getHours()) % 12);
         let minutes = date.getMinutes();
         let seconds = date.getSeconds();
         let ampm = (date.getHours()) < 12 ? 'AM' : 'PM';
