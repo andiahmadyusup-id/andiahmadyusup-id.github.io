@@ -11,12 +11,11 @@ allRange.forEach(range => {
         let alpha = document.querySelector(".alpha").value;
 
         box.style.backgroundColor = `rgba(${red},${green}, ${blue}, ${alpha})`;
-        colorText.value = `background-color: rgba(${red}, ${green}, ${blue}, ${alpha})`;
-
-        btnCopy.addEventListener("click", () => {
+        colorText.value = `background-color: rgba(${red}, ${green}, ${blue}, ${alpha})`; 
+    })
+})
+  btnCopy.addEventListener("click", () => {
             colorText.setSelectionRange(0, 99999);
             navigator.clipboard.writeText(colorText.value);
             alert("Copied the text: " + colorText.value);
-        })
-    })
-})
+  })
