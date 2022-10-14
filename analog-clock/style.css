@@ -1,0 +1,121 @@
+html,
+body,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #041825;
+}
+.container{
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    margin: auto;
+
+}
+
+.clock{
+position: relative;
+width: 500px;
+height: 500px;
+background-image: url(clock.png);
+background-size: 100% 100%;
+border: 13px solid black;
+border-radius: 50%;
+box-shadow: 5px 15px 15px #0008;
+margin: auto;
+}
+
+.clock > .clockwise{
+    background: #000;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
+
+.clock > .hours{
+    background: #222;
+    height: 30%;
+    left: calc(50% - 7px);
+    width: 14px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #0003;
+}
+.clock > .hours::before{
+    content: '';
+    display: block;
+    height: 30%;
+    width: 14px;
+    position: absolute;
+    top: calc(100% - 5px);
+    background: #222;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #0003;
+}
+
+.clock > .minutes{
+    background:#222;
+    height: 35%;
+    left: calc(50% - 5px);
+    width: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #0003;
+}
+
+.clock > .minutes:before {
+	content :'';
+	display: block;
+	height: 50px;
+	width: 10px;
+	background: #222;
+	position: absolute;
+	top: calc(100% - 5px );
+	box-shadow: 5px 5px 5px #0003;
+	border-radius: 5px;
+}
+
+
+.clock > .seconds{
+    background:red;
+    height: 40%;
+    left: calc(50% - 3px);
+    width: 6px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #0003;
+}
+.clock > .seconds::before{
+    content: '';
+    display: block;
+    height: 40px;
+    width: 6px;
+    position: absolute;
+    top: calc(100% - 5px);
+    background: red;
+    border-radius: 5px;
+}
+.clock > .seconds::after{
+    content: '';
+    display: block;
+    height: 40px;
+    width: 10px;
+    position: absolute;
+    top: calc(100% + 30px);
+    background: red;
+    border-radius: 5px;
+    left: -2px;
+}
+@media only screen and (max-width : 600px) {
+   .container{
+       width: 90%;
+       height: 100vh;
+   }
+   .clock{
+       height: 200px;
+       width: 200px;
+   }
+
+}
