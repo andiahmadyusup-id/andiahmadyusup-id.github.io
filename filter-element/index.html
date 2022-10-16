@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Element</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="btnContainer">
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="display('card')">Show all</button>
+        <button class="btn" onclick="display('cars')">Cars</button>
+        <button class="btn" onclick="display('animals')">Animals</button>
+        <button class="btn" onclick="display('fruits')">Fruits</button>
+        <button class="btn" onclick="display('colors')">Colors</button>
+        <select>
+          <option class="select" value="card">all</option>
+          <option class="select">cars</option>
+          <option class="select">animals</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card cars">BMW</div>
+      <div class="card colors fruits">Orange</div>
+      <div class="card cars">Volvo</div>
+      <div class="card colors">Red</div>
+      <div class="card cars animals">Mustang</div>
+      <div class="card colors">Blue</div>
+      <div class="card animals">Cat</div>
+      <div class="card animals">Dog</div>
+      <div class="card fruits">Melon</div>
+      <div class="card fruits animals">Kiwi</div>
+      <div class="card fruits">Banana</div>
+      <div class="card fruits">Lemon</div>
+      <div class="card animals">Cow</div>
+      <div class="card cars">BMW</div>
+      <div class="card colors fruits">Orange</div>
+      <div class="card cars">Volvo</div>
+      <div class="card colors">Red</div>
+      <div class="card cars animals">Mustang</div>
+      <div class="card colors">Blue</div>
+      <div class="card animals">Cat</div>
+      <div class="card animals">Dog</div>
+      <div class="card fruits">Melon</div>
+      <div class="card fruits animals">Kiwi</div>
+      <div class="card fruits">Banana</div>
+      <div class="card fruits">Lemon</div>
+      <div class="card animals">Cow</div>
+    </div>
+
+   <script src="script.js"></script>
+  </body>
+</html>
